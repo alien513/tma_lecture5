@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "esnext",
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ES2015"
+        ],
+        "allowJs": true,
+        "checkJs": true,
+        //"outFile": "./",
+        //"outDir": "./",
+        //"rootDir": "./",
+        "removeComments": true,
+        "noEmit": true,
+        "strict": true,
+        "moduleResolution": "node",
+        //"baseUrl": "./",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}

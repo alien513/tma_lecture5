@@ -1,0 +1,136 @@
+body {
+  padding: 2vw;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: darkmagenta;
+}
+
+h2 {
+  padding: 10px;
+  padding-top: 30px;;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: darkmagenta;
+}
+
+ol {
+  text-align: left;
+}
+
+.hidden {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  display: none;
+}
+
+section {
+  min-height: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  border: 1px solid darkmagenta;
+}
+
+
+section div {
+  display: block;
+  border: 1px solid rgb(65, 63, 63);
+  margin: .1vw;
+  background-color: rgb(176, 125, 176);
+  padding: .5rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+
+section div p {
+  padding: 0;
+  margin: 0;
+}
+
+.form1 {
+  display: grid;
+  grid-template-columns: [get] auto [remove] auto [space] 1fr;
+  grid-gap: 1rem;
+  padding:0;
+  margin:0;
+  padding-top: 1vw;
+}
+
+button {
+  color: white;
+  background-color: darkmagenta;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border: 1px solid darkmagenta;
+  border-radius: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /*
+  transition: all .5s ease-in-out;
+  transition-property: all;
+  */
+}
+
+button:disabled {
+  color: rgba(125, 125, 125, .33);
+  background-color: white;
+}
+
+button:hover {
+  text-shadow: #cccccc 0px 0px 2px;
+  /*
+  transition: all .5s ease-in-out;
+  transition-property: all;
+  */
+}
+
+button[name="get"] {
+  grid-column: get;
+  grid-row: auto;
+}
+
+button[name="remove"] {
+  grid-column: remove;
+  grid-row: auto;
+}
+
+.form2 {
+  display: grid;
+  grid-template-columns: [id] auto [new_name] auto [update] auto [space] 1fr;
+  grid-gap: 1rem;
+  padding:0;
+  margin:0;
+  padding-top: 1vw;
+}
+
+button[name="update"] {
+  grid-column: update;
+  grid-row: auto;
+}
+
+.post {
+  width: 100%;
+}
